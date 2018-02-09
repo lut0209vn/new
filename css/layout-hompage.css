@@ -1,0 +1,266 @@
+/* sass css 01
+ -----------------------------------------------------*/
+.page-main {
+  background: #f4f4f4;
+  width: 1105px;
+}
+
+.side-menu {
+  -webkit-box-shadow: 5px 0 15px -2px #c0c0c0;
+          box-shadow: 5px 0 15px -2px #c0c0c0;
+  background: #002d74;
+  width: 100px;
+  display: inline-block;
+  float: left;
+}
+.side-menu .md-row {
+  padding: 24.43px 0px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.side-menu .md-row:hover {
+  background: #224275;
+}
+.side-menu .md-row.active:before {
+  content: "";
+  width: 4px;
+  height: 80%;
+  display: block;
+  position: absolute;
+  background: #f11b00;
+  left: 0px;
+  top: 10%;
+}
+.side-menu .md-row a {
+  height: 100%;
+  cursor: pointer;
+  position: relative;
+  font-size: 12px;
+  color: #FFF;
+}
+.side-menu .md-row a span {
+  padding-top: 2px;
+}
+.side-menu .profile {
+  border-top: 2px solid #002054;
+  border-bottom: 2px solid #002054;
+}
+.side-menu .profile .icon {
+  margin: 0 auto;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.side-menu .profile .icon img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.side-menu .profile .icon:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 0px;
+  background: #57d491;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+.side-menu .notification .icon {
+  position: relative;
+  margin: 0 auto;
+  width: 38px;
+  height: 28px;
+  display: block;
+}
+.side-menu .notification .icon:before {
+  content: "3";
+  font-size: 10px;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  background: #dc6060;
+  border: 1px solid #FFF;
+  border-radius: 50%;
+}
+.side-menu .notification .icon span {
+  display: block;
+}
+
+.primary {
+  padding: 0px 0px 0px 30px;
+  float: left;
+  width: 765px;
+}
+
+.upcoming-tasks {
+  margin-bottom: 3px;
+}
+.upcoming-tasks h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #232323;
+  margin-bottom: 6px;
+}
+.upcoming-tasks .content .md-row {
+  margin-bottom: 5px;
+  background: #FFF;
+  padding: 11px 20px 13px 20px;
+  -webkit-box-shadow: 0 5px 2px -2px #f5f5f5;
+          box-shadow: 0 5px 2px -2px #f5f5f5;
+  position: relative;
+}
+.upcoming-tasks .content .md-row:before {
+  content: "";
+  background: url(../images/ico-arrow.png) no-repeat;
+  width: 5px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  margin-top: -6px;
+}
+.upcoming-tasks .content .md-row h4 {
+  margin: 0px;
+}
+.upcoming-tasks .content .md-row h4 a {
+  color: #232323;
+}
+
+.newsfeed h2 {
+  font-weight: 500;
+  font-size: 18px;
+  color: #232323;
+}
+.newsfeed .col {
+  float: left;
+  margin-left: 20px;
+  width: 220px;
+}
+.newsfeed .col:first-child {
+  margin-left: 0px;
+}
+.newsfeed .col .thumb-nail {
+  margin-bottom: 10px;
+}
+.newsfeed .col h3 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.newsfeed .col .date-time {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.stocks {
+  background: #1e2e47;
+  width: 240px;
+  float: left;
+  height: 100vh;
+}
+.stocks .md-row {
+  padding: 11px 0px 10.25px 0px;
+  display: block;
+  font-weight: 500;
+  position: relative;
+}
+.stocks .md-row.plus {
+  padding: 20px 0px;
+  text-align: right;
+}
+.stocks .md-row.plus img {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.stocks .md-row.md-row-special {
+  padding: 20px 0px;
+}
+.stocks .md-row.md-row-special .fl-left span {
+  font-size: 36px;
+}
+.stocks .md-row.md-row-special .fl-right .text {
+  padding-top: 5px;
+  text-align: center;
+  clear: both;
+  display: block;
+  float: none;
+  width: 100%;
+}
+.stocks .md-row.md-row-special .fl-right span {
+  text-align: center;
+  margin: 0 auto;
+  float: none;
+}
+.stocks .md-row:nth-child(2n) {
+  background: #1e2e47;
+}
+.stocks .md-row:nth-child(2n+1) {
+  background: #283a56;
+}
+.stocks .md-row:nth-child(2n+1):before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background: #1e2e47;
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+}
+.stocks .md-row .fl-left {
+  padding-left: 20px;
+  width: 120px;
+  float: left;
+}
+.stocks .md-row .fl-left span {
+  color: #FFF;
+}
+.stocks .md-row .fl-right {
+  width: 120px;
+  padding-left: 16px;
+  float: left;
+}
+.stocks .md-row .fl-right .text-white {
+  color: #FFF;
+  float: left;
+  display: inline-block;
+}
+.stocks .md-row .fl-right .text-red {
+  color: #ff5742;
+  margin-left: 10px;
+}
+.stocks .md-row .fl-right .text-red:before {
+  content: "";
+  background: url(../images/ico-arrow-red.png) no-repeat center;
+}
+.stocks .md-row .fl-right .text-blue {
+  color: #52c38a;
+  margin-left: 10px;
+}
+.stocks .md-row .fl-right .text-blue:before {
+  background: url(../images/ico-arrow-blue.png) no-repeat center;
+}
+.stocks .md-row .fl-right .md-text-arrow {
+  position: relative;
+  padding-right: 10px;
+}
+.stocks .md-row .fl-right .md-text-arrow:before {
+  content: "";
+  width: 7px;
+  height: 4px;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 5px;
+}
